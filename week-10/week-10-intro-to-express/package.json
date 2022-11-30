@@ -1,0 +1,28 @@
+{
+  "name": "week-10-intro-to-express",
+  "version": "1.0.0",
+  "description": "In this phase, you will create a new Express project and initialize an Express application to listen for requests on a port. You will also return a simple text response on the `/status` route.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "dev" : "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhatheisen/week-10-intro-to-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhatheisen/week-10-intro-to-express/issues"
+  },
+  "homepage": "https://github.com/jhatheisen/week-10-intro-to-express#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
