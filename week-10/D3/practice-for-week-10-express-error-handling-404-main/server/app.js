@@ -32,7 +32,7 @@ app.use((err, req, res, next) => {
   // assign res status
   res.status(statusCode);
 
-  // turn message and status code into json and send
+  // turn message and status code into json and SENDS
   res.json({
     message,
     statusCode
