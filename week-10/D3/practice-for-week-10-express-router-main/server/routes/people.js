@@ -2,6 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 
+// need / people first
 router.get("/", (req, res) => {
   res.json("Number 1");
 });
