@@ -39,22 +39,32 @@ rows shown above.
 Run the SQL command that returns the entire table - that is, all rows and all
 columns.
 
+  - SELECT * FROM puppies;
+
 ## Step 2: Select specific columns
 
 Run the SQL command that returns the name, age and weight of each puppy.
 
+  - ELECT name, age_yrs , weight_lbs FROM puppies;
+
 ## Step 3: Select one row by its primary key
 
-Run the SQL command that returns the name, age and weight for the puppy with an 
+Run the SQL command that returns the name, age and weight for the puppy with an
 `id` of `5`.
+
+ - SELECT * FROM puppies
+    WHERE id = 1;
 
 ## Step 4: Select rows matching a specific value
 
 Run the SQL command that returns the name, age and weight for each puppy that has
 been `microchipped`.
 
-> Tip: Remember that SQLite stores a `BOOLEAN` value as an `INTEGER` where 
+> Tip: Remember that SQLite stores a `BOOLEAN` value as an `INTEGER` where
 > `1` means `TRUE` and `0` means `FALSE`.
+
+  - SELECT name , age_yrs , weight_lbs FROM puppies
+     WHERE microchipped = 1;
 
 ## Step 5 INTERMEDIATE: Select rows greater than a value
 
@@ -64,6 +74,9 @@ age and weight of all large puppies, meaning those over 25 pounds (lbs).
 > Tip: On numeric columns (`INTEGER` and `REAL`), SQL uses comparison operators
 > similar to JavaScript (e.g. `>`, `>=`, `<`, `<=`).
 
+ - SELECT name , age_yrs , weight_lbs FROM puppies
+    WHERE weight_lbs > 25;
+
 ## Step 6 ADVANCED: Select rows with multiple criteria
 
 Run the SQL command to query for all large puppies with a microchip.
@@ -71,7 +84,10 @@ Run the SQL command to query for all large puppies with a microchip.
 > Tip: Like JavaScript, SQL has a way to combine conditionals using logical
 > statements such as `AND`, `OR` and `NOT`.
 
+ - SELECT name , age_yrs , weight_lbs FROM puppies
+   ...> WHERE weight_lbs > 25 AND microchipped = 1;
+
 ## Congratulations!
 
-You are now able to query data in a database using the SQL `SELECT` statement 
+You are now able to query data in a database using the SQL `SELECT` statement
 with and without a `WHERE` clause.
