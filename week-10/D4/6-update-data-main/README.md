@@ -40,6 +40,10 @@ but you can create and use a `.sql` file to formulate the command.
 
 Write and run a `UPDATE` statement to change **Ryan Pond** to **Ryder Pond**.
 
+ - UPDATE friends
+  -  SET first_name = 'Ryder'
+  -  WHERE first_name = 'Ryan';
+
 ## Step 2: Silent failure
 
 Copy/paste the following SQL statement into your SQLite CLI, and run it.
@@ -56,6 +60,11 @@ WHERE first_name = 'Tyler'
   If you feel like nothing happened, you would be correct. Now, can you fix the statement so it
   will rename <strong>Sky Tyler</strong> to <strong>Sky Blue</strong>?
 </details>
+
+ - UPDATE friends
+ - SET last_name = 'Blue'
+ - WHERE first_name = 'Sky'
+ - AND last_name = 'Tyler';
 
 ## Congratulations!
 
