@@ -19,8 +19,8 @@ Run `sqlite3`. You can begin with no database.
 You can view the available commands for SQLite using `.help`. Run this
 now and look for the commands to
 
-* View the list of tables
-* View the table schema
+* View the list of tables / .tables
+* View the table schema / .schema
 
 Write down what you found. You'll need to use them in the next section.
 
