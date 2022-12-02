@@ -36,4 +36,12 @@ VALUES ('The Falling Box', 1, 2015, 25000),
   ('The King River', 5, 2017, 85000),
   ('Under Water', 5, 2020, 106000),
   ('Another Fork', 5, 2021, 140000);
-  
+
+-- p1
+SELECT bands.name, albums.title, albums.band_id FROM bands
+  JOIN albums ON (albums.band_id = bands.id);
+
+-- p2
+SELECT bands.name, albums.title, albums.band_id, albums.num_sold FROM bands
+  JOIN albums ON (albums.band_id = bands.id)
+  WHERE albums.num_sold < 20000;
