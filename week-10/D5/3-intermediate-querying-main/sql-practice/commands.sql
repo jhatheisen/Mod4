@@ -23,3 +23,13 @@ ORDER BY num_sold DESC;
 SELECT num_sold FROM albums WHERE num_sold
 ORDER BY num_sold DESC
 LIMIT 2 OFFSET 2;
+
+-- aggregate functions
+-- avgs num of albums sold
+SELECT AVG(num_sold) FROM albums;
+
+-- counts amount of albums
+SELECT COUNT(*) FROM albums;
+
+-- sums amount of records
+SELECT SUM(num_sold) FROM albums;
